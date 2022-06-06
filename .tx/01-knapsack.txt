@@ -1,0 +1,8 @@
+/* Here is the explanation for the code above:
+1. We have the items which have values and weights.
+2. We have the total weight of the knapsack.
+3. We are considering the items one by one.
+4. We find the maximum value which can be achieved by considering the current item.
+5. We find the maximum value which can be achieved by ignoring the current item.
+6. We take the maximum of the two values: considering the current item or ignoring the current item.
+7. We return the maximum value. */
