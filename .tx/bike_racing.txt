@@ -1,0 +1,10 @@
+/* The code above does the following:
+1. Initializes the low and high values to the speed limit.
+2. Loops until the low value is less than or equal to the high value.
+3. At each iteration, calculates the time at which the bike can reach the speed limit.
+4. Checks if the speed of the bike at the given time exceeds the maximum allowed speed.
+5. If it does, the time is stored in the minimum time to alarm variable.
+6. If the speed of the bike at the given time does not exceed the maximum allowed speed, the low value is incremented by 1.
+7. If the speed of the bike at the given time exceeds the maximum allowed speed, the high value is decremented by 1.
+8. The loop is repeated until the low value is less than or equal to the high value.
+9. The minimum time to alarm is printed. */
