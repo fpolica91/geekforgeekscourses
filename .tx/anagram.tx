@@ -4,7 +4,6 @@
 3. We are creating a for loop to iterate through the length of the first string.
 4. We are incrementing the value of the list at the index of the character of the first string.
 5. We are decrementing the value of the list at the index of the character of the second string.
-6. We are creating another for loop to iterate through the length of the second string.
 7. We are creating another for loop to iterate through the length of the list of elements.
 8. If any element of the list is non-zero, then the two strings are not anagrams.
 9. If all the elements of the list are zero, then the two strings are anagrams. """
