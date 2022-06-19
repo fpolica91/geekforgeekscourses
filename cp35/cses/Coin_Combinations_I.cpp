@@ -26,6 +26,21 @@ int solve(int target){
 
 }
 
+int solve_iter(){
+  int memo[sum+1];
+  memo[0] = 1;
+  for(int i = 1; i <= sum; i++){
+    int ans = 0;
+    for(int j = 0; j < numCoins; j++){
+      if(coins[j] <= i){
+        ans = (ans % md + memo[i - coins[j]] % md) % md;
+      }
+    }
+    memo[i] = ans;
+  } 
+  return memo[sum];
+}
+
 
 
 int main(){
@@ -36,5 +51,5 @@ int main(){
   for(int i= 0; i < numCoins; i++){
     cin>>coins[i];
   }
-  cout << solve(sum) % md;
+  cout << solve_iter() % md;
 }
