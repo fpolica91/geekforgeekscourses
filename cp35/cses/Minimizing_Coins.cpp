@@ -4,6 +4,22 @@ vector<int> memo;
 vector<int> coins;
 int numCoins, requiredValue;
 
+int calculateTabular(){
+    int i, j;
+    for(i = 0; i <= requiredValue; i++){
+        memo[i] = INT_MAX - 5;
+    }
+    memo[0] = 0;
+    for(i = 1; i <= requiredValue; i++){
+        for(j = 0; j < numCoins; j++){
+            if(coins[j] <= i){
+                memo[i] = min(memo[i], memo[i - coins[j]] + 1);
+            }
+        }
+    }
+    return memo[requiredValue];
+}
+
 
 int calculate(int currValue){
   if(currValue < 0){
@@ -38,7 +54,7 @@ int main(){
     cin>>coins[i];
   }
 
-  int solution = calculate(requiredValue);
+  int solution = calculateTabular();
   if(solution == INT_MAX - 5){
     cout << -1;
   }
