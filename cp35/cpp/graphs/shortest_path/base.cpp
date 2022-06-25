@@ -4,6 +4,8 @@
     const int N = 1e5+5;
     const int mx = INT_MAX -10;
 
+    
+
 
     
 
@@ -21,6 +23,7 @@
       // while queue is not empty
       while(!pq.empty()){
         auto top = pq.top();
+        pq.pop();
         int weight = -1 * top.first;
         int node = top.second;
         for(auto ng:g[node]){
