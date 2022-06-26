@@ -62,11 +62,11 @@ int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cin >> n >> m;
-    visited.resize(n);
+    // initialize visited
+    
+    visited = vector<vector<bool>> (n, vector<bool> (m));
 
-    for(int i = 0; i < n; i++){
-      visited[i].resize(m);
-    }
+ 
  
 
 
