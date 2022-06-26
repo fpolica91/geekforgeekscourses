@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=from%20collections%20import%20defaultdict%0AN%20%3D%2020%0Acnt%20%3D%20%5B%200%20for%20i%20in%20range%28N%29%20%5D%0A%0A%0Adef%20dfs%28s%29%3A%0A%20%20%20%20cnt%5Bs%5D%20%3D%201%0A%20%20%20%20for%20e%20in%20g%5Bs%5D%3A%0A%20%20%20%20%20%20%20%20dfs%28e%29%0A%20%20%20%20%20%20%20%20cnt%5Bs%5D%20%2B%3D%20cnt%5Be%5D%0A%0An%20%3D%20int%28input%28%29.strip%28%29%29%0Ag%20%3D%20defaultdict%28list%29%0Afor%20i%20in%20range%282,%20n%20%2B%201%29%3A%0A%20%20%20%20x%20%3D%20int%28input%28%29.strip%28%29%29%0A%20%20%20%20g%5Bx%5D.append%28i%29%0Adfs%281%29%0Afor%20i%20in%20range%281,%20n%20%2B%201%29%3A%0A%20%20%20%20print%28cnt%5Bi%5D%20-%201,%20end%3D%22%20%22%29%0Aprint%28%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+</body>
+</html>
