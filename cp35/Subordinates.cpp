@@ -29,7 +29,6 @@ int main()
     return 0;
 }
 
-
 // int n;
 // int p[200005];
 // int ans[200005];
