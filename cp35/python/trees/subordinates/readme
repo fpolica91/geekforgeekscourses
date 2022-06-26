@@ -1,0 +1,14 @@
+### Problem can be found here
+
+  1. https://cses.fi/problemset/task/1674
+
+### Clarifications 
+  these assholes wrote a confusing problem description
+  the provided array are not neccesarily the nodes 
+  of the tree, they are the order of hierarchy of employees in a company
+        5 -> number of employes in the company
+        1 1 2 3 -> employee 1 is the boss of employee 2 and 3
+        1 1 2 3 -> employee 2 is the boss of employee 3
+        1 1 2 3 -> employee 3 is not a boss
+
+        
