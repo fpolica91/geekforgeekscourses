@@ -5,6 +5,7 @@ using namespace std;
 using ll = long long int;
 vector<ll> prefix;
 
+
 // static range sum
 
 int main(){
