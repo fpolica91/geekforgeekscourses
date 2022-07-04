@@ -51,5 +51,5 @@ int main(){
   for(int i= 0; i < numCoins; i++){
     cin>>coins[i];
   }
-  cout << solve_iter() % md;
+  cout << solve(sum) % md;
 }
