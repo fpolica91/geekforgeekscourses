@@ -6,23 +6,20 @@ using namespace std;
 int main(){
    ios_base::sync_with_stdio(false);
    cin.tie(NULL);
-   int n; 
-   cin>>n;
-   int ans = 1;
-   int prev;
-   vector<string> m;
+   string s1, s2;
+   cin >> s1 >> s2;
+   string ans;
+   int n = s1.size();
+   for(int i = 0; i < n; i++){
+    int a = s1[i]-'0';
+    int b = s2[i]-'0';
 
-   while(n--){
-    string s;
-    cin >> s;
-    m.emplace_back(s);
+    int c = a^b;
+    char x = c+'0';
+    ans+= x;
    }
 
-  for(int i = 0; i < m.size()-1; i++){
-    if(m[i][1] == m[i+1][0]){
-      ans++;
-    }
-  }
   cout << ans;
+ 
 }
 
