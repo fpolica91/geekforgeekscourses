@@ -35,6 +35,19 @@ ListNode *insert_at_end(ListNode *head, int data){
   return head;
 }
 
+ListNode * get_middle(ListNode *head){
+  ListNode *fast = head, *slow = head;
+  while(fast and fast->next){
+    slow = slow->next;
+    fast = fast->next->next;
+    if(slow == fast){
+      break;
+    }
+  }
+  return slow;
+}
+
+
 
 int main(){
   ListNode *head = new ListNode(1);
@@ -43,5 +56,6 @@ int main(){
   head->next->next->next = new ListNode(4);
   head = insert_at_beginning(head, 0);
   insert_at_end(head, 5);
+  cout << "the middle of the linked list -> " <<  get_middle(head)->val << endl;
   print_list(head);
 }
